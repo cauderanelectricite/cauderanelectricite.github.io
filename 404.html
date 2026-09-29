@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page introuvable (404) — Caudéran Électricité</title>
+  <meta name="description" content="Cette page n'existe pas ou a été déplacée. Retournez à l'accueil de Caudéran Électricité ou contactez directement l'artisan.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F4F6F9">
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F4F6F9;
+      --txt: #16191F;
+      --txt-2: #5B6472;
+      --amber: #F59E0B;
+      --card: #FFFFFF;
+      --border: #E3E7EE;
+      --led: #22C55E;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      background: var(--bg);
+      color: var(--txt);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      padding: 24px 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--txt);
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 1.05rem;
+      line-height: 1.1;
+    }
+
+    .brand-name small {
+      display: block;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 400;
+      font-size: 0.7rem;
+      color: var(--txt-2);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .error-code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--txt-2);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: var(--card);
+    }
+
+    /* ---------- LED ---------- */
+    .led {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--led);
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%   { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5); }
+      70%  { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+
+    /* ---------- Main ---------- */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 5vw 80px;
+    }
+
+    /* Grand 404 façon néon fatigué */
+/* Grand 404 façon néon fatigué amélioré */
+    .big-code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(4.5rem, 18vw, 9rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      color: var(--amber);
+      text-shadow: 0 0 15px rgba(245, 158, 11, 0.6), 0 0 30px rgba(245, 158, 11, 0.3);
+      animation: tiredNeon 6s infinite steps(1);
+    }
+
+    @keyframes tiredNeon {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 15px rgba(245, 158, 11, 0.6), 0 0 30px rgba(245, 158, 11, 0.3);
+      }
+      20%, 24%, 55% {
+        opacity: 0.2;
+        text-shadow: none;
+      }
+      60% {
+        opacity: 0.8;
+        text-shadow: 0 0 5px rgba(245, 158, 11, 0.3);
+      }
+      62% {
+        opacity: 0.3;
+        text-shadow: none;
+      }
+      63% {
+        opacity: 0.9;
+        text-shadow: 0 0 20px rgba(245, 158, 11, 0.8);
+      }
+    }
+    .kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--txt-2);
+      margin: 18px 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 5.5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 680px;
+    }
+
+    h1 span { color: var(--amber); }
+
+    .lead {
+      margin-top: 16px;
+      font-size: 1.05rem;
+      color: var(--txt-2);
+      max-width: 520px;
+      line-height: 1.6;
+    }
+
+    /* ---------- Terminal ---------- */
+    .terminal {
+      margin-top: 36px;
+      width: min(480px, 100%);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      text-align: left;
+    }
+
+    .terminal p {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--txt-2);
+      margin-bottom: 6px;
+    }
+
+    .terminal p b { color: var(--txt); }
+    .terminal .err { color: var(--amber); }
+    .terminal .caret::after {
+      content: "_";
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink { 50% { opacity: 0; } }
+
+    /* ---------- Boutons ---------- */
+    .actions {
+      margin-top: 36px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn, .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: transform 0.15s ease;
+    }
+
+    .btn:hover, .btn-ghost:hover { transform: translateY(-2px); }
+
+    .btn {
+      background: var(--txt);
+      color: #fff;
+    }
+
+    .btn-ghost {
+      background: var(--card);
+      color: var(--txt);
+      border: 1px solid var(--border);
+    }
+
+    .mail {
+      margin-top: 22px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+    }
+
+    .mail a {
+      color: var(--txt);
+      text-decoration: none;
+      border-bottom: 1px dashed var(--txt-2);
+    }
+
+    /* ---------- Hazard ---------- */
+    .hazard {
+      height: 14px;
+      background: repeating-linear-gradient(
+        -45deg,
+        #16191F 0 14px,
+        var(--amber) 14px 28px
+      );
+    }
+
+    @media (max-width: 560px) {
+      .error-code { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="brand" href="/">
+      <span class="led" aria-hidden="true"></span>
+      <span class="brand-name">
+        Caudéran Électricité
+        <small>Bordeaux Caudéran</small>
+      </span>
+    </a>
+    <span class="error-code">Erreur 404</span>
+  </header>
+
+  <main>
+    <div class="big-code" aria-hidden="true">404</div>
+
+    <p class="kicker">Circuit ouvert</p>
+
+    <h1>Cette page a <span>disjoncté</span>.<br>Le courant, lui, revient.</h1>
+
+    <p class="lead">
+      La page que vous cherchez n'existe pas ou a été déplacée.
+      Pas de panique : il suffit de réenclencher depuis l'accueil
+      ou de me contacter directement.
+    </p>
+
+    <div class="terminal" role="status">
+      <p>&gt; requête : <b>/page-inconnue</b></p>
+      <p><span class="err">✗ erreur 404</span> — page introuvable<span class="caret"></span></p>
+      <p>&gt; solution : revenir à l'accueil</p>
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="/">← Retour à l'accueil</a>
+      <a class="btn-ghost" href="tel:+33612698433">
+        <span class="led" aria-hidden="true"></span> 06 12 69 84 33
+      </a>
+    </div>
+
+    <p class="mail">
+      <a href="mailto:cauderan.electricite@gmail.com">cauderan.electricite@gmail.com</a>
+      — à votre écoute du lundi au vendredi, 8h – 19h
+    </p>
+  </main>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+</body>
+</html>
