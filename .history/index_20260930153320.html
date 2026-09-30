@@ -410,19 +410,6 @@
   if (servicesSection && prestationsLink) {
     observer.observe(servicesSection);
   }
-
-  document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('demo-modal');
-  const closeBtn = document.getElementById('close-modal');
-
-  closeBtn.addEventListener('click', () => {
-    modal.style.opacity = '0';
-    modal.style.transition = 'opacity 0.3s ease';
-    setTimeout(() => {
-      modal.style.display = 'none';
-    }, 300);
-  });
-});
 </script>
 
 </body>
