@@ -121,7 +121,11 @@ header {
   width: 32px;
   height: 32px;
   object-fit: contain;
+<<<<<<< HEAD
   background: var(--panel);
+=======
+  background: var(--panel); /* typo --pannel corrigée */
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
   border-radius: 6px;
   padding: 3px;
 }
@@ -198,7 +202,11 @@ nav a[aria-current="page"] { color: var(--amber); }
   padding: 13px 24px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.6);
+<<<<<<< HEAD
   background: rgba(217, 119, 6, 0.9);
+=======
+  background: rgba(217, 119, 6, 0.9); /* amber unifié avec --amber */
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -311,6 +319,10 @@ main {
   border-radius: 16px;
   padding: 8px 22px;
   font-family: var(--mono);
+<<<<<<< HEAD
+=======
+  /* pas de background ici : .liquid-glass s'en charge */
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
 }
 
 .spec-row {
@@ -557,17 +569,26 @@ main {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 /* ---------- CTA finale (verre fumé ultra-lisible & robuste) ---------- */
 .cta.liquid-glass,
 .liquid-glass.cta {
   border-radius: 24px;
   padding: 44px;
   margin: 40px 0 60px;
+=======
+/* ---------- CTA finale (verre fumé lisible) ---------- */
+.cta.liquid-glass {
+  border-radius: 24px;
+  padding: 44px;
+  margin: 20px 0 60px;
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
+<<<<<<< HEAD
   background: rgba(26, 34, 45, 0.95) !important;
   backdrop-filter: blur(25px) saturate(180%);
   -webkit-backdrop-filter: blur(25px) saturate(180%);
@@ -595,21 +616,43 @@ main {
 .cta .kicker { 
   color: #FBBF24 !important; 
 }
+=======
+  background: rgba(26, 34, 45, 0.88);
+  border-color: rgba(255, 255, 255, 0.25);
+  border-top-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+.cta.liquid-glass:hover {
+  background: rgba(26, 34, 45, 0.92);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.cta .kicker { color: #FBBF24; }
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
 
 .cta h2 {
   font-size: 1.8rem;
   font-weight: 800;
   line-height: 1.1;
+<<<<<<< HEAD
   color: #fff !important;
+=======
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
 }
 
 .cta p {
   margin-top: 8px;
+<<<<<<< HEAD
   color: rgba(255, 255, 255, 0.85) !important;
+=======
+  color: rgba(255, 255, 255, 0.85);
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
   max-width: 45ch;
 }
 
 .cta .btn {
+<<<<<<< HEAD
   background: var(--amber) !important;
   color: #fff !important;
 }
@@ -627,6 +670,24 @@ main {
 .cta .btn-ghost:hover {
   background: rgba(255, 255, 255, 0.18) !important;
   border-color: rgba(255, 255, 255, 0.5) !important;
+=======
+  background: var(--amber);
+}
+
+.cta .btn:hover {
+  background: var(--amber-deep);
+}
+
+.cta .btn-ghost {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.cta .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
 }
 
 .cta-actions {
@@ -943,8 +1004,12 @@ footer {
     grid-template-columns: 1fr;
   }
 
+<<<<<<< HEAD
   .cta.liquid-glass,
   .liquid-glass.cta {
+=======
+  .cta.liquid-glass {
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
     flex-direction: column;
     align-items: flex-start;
     padding: 32px;
@@ -982,6 +1047,7 @@ footer {
   margin-top: 3px;
   accent-color: #f0b429;
 }
+<<<<<<< HEAD
 .workorder .consent a { color: var(--txt, #111); }
 
 /* ---------- Boîte CTA Contact bien propre et stylée ---------- */
@@ -1027,3 +1093,6 @@ nav a.active {
   color: var(--amber) !important;
 }
 
+=======
+.workorder .consent a { color: var(--txt, #111); }
+>>>>>>> afc5460446bb6070f8ace2c28d2e712b42d2bee9
